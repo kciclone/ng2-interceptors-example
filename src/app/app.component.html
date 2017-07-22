@@ -1,0 +1,17 @@
+<table class="table table-bordered table-condensed ">
+            <thead>
+               <th>Name</th>
+               <th>Email</th>
+            </thead>
+            <tbody>
+               <tr *ngFor="let item of pagedItems; let i = index;">
+                  <td><div class="tbl-col">{{item.name}}</div></td>
+                  <td><div class="tbl-col">{{item.email}}</div></td>
+               </tr>
+               <tr>
+               <td colospan="2" *ngIf="itemCount == 0">
+                       No data was available
+                  </td>
+               </tr>
+            </tbody>
+         </table>
